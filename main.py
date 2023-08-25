@@ -32,9 +32,9 @@ class Racket(Gamespite):
             self.rect.y += self.speed
 
         if keys_pressed[K_a] and self.rect.x > 0:
-            self.rect.y -= self.speed
+            self.rect.x -= self.speed
         if keys_pressed[K_d] and self.rect.x < H-self.size_x:
-            self.rect.y += self.speed
+            self.rect.x += self.speed
 
     def update_right(self):
         keys_pressed = key.get_pressed()
@@ -44,9 +44,9 @@ class Racket(Gamespite):
             self.rect.y += self.speed
         
         if keys_pressed[K_LEFT] and self.rect.x > 0:
-            self.rect.y -= self.speed
+            self.rect.x -= self.speed
         if keys_pressed[K_RIGHT] and self.rect.x < H-self.size_x:
-            self.rect.y += self.speed
+            self.rect.x += self.speed
 
 
 
